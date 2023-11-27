@@ -10,28 +10,47 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="preloader"></div>
-
-
     <header>
         <div class="logo">
-            <img src="IMG/layover-logo.png" alt="layover-logo">
+            <img src="IMG/layover-logo.png" alt="Logo">
         </div>
-        <nav>
-            <ul class="menu">
+        <div class="menu">
+            <ul class="desktop-menu">
                 <li><a href="#quien-es">Quién es</a></li>
                 <li><a href="#discografia">Discografía</a></li>
                 <li><a href="#galeria">Galería</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </nav>
+            <button class="hamburger-button">&#9776;</button>
+        </div>
+        <ul class="mobile-menu">
+            <li><a href="#quien-es">Quién es</a></li>
+            <li><a href="#discografia">Discografía</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="https://www.instagram.com/thv/?utm_source=ig_web_button_share_sheet&igshid=ODE2OTA4Y2Y1MQ==" target="_blank"><img src="IMG/Instagram.png" alt="Instagram"></a>
+            <a href="https://x.com/BTS_twt?s=20" target="_blank"><img src="IMG/Twitter.png" alt="Twitter"></a>
+            <a href="https://www.youtube.com/watch?v=yTsINmrAK4I&list=PLRzAbtkGK56bFdslVs1eXPKcdBAg87Fll" target="_blank"><img src="IMG/youtube.png" alt="YouTube"></a>
+        </div>
+        
     </header>
+    
 
     <section id="quien-es" class="section">
         <h2>Taehyung (V) de BTS</h2>
         <p>Kim Tae-Hyung, más conocido por su nombre artístico V, <br>
         es un cantante, bailarín, actor y modelo surcoreano. <br>
         Desde 2013 es miembro del grupo BTS bajo la compañía Big Hit Music.</p>
+        <button id="ver-mas-btn">Ver más</button>
+    <div id="biografia-completa" style="display: none;">
+        <p>Kim Tae-hyung es un cantante y compositor, nacido el 30 de diciembre de 1995, en Daegu, Corea del Sur. <br>
+        El mayor de tres hermanos, Kim soñaba con una carrera en la música desde que era niño y convenció a sus padres para inscribirlo en clases de canto, música y saxofón. <br>
+        No tardo mucho en mostrar su enorme talento para que el consorcio de entretenimiento Big Hit lo firmara, és de pasar una audición y buscará como explotar sus dotes musicales. <br>
+        Ese camino termino cuando lo eligieron para ser parte de la banda de k-pop, BTS, debutando en 2013 y asumiendo el sobrenombre artístico de V. <br>
+        Él, junto al resto de la banda, fueron receptores de la Orden del Mérito Cultural, por su parte en la promoción de la cultura coreana.</p>
+    </div>
     </section>
 
     <section id="discografia" class="section">
@@ -88,25 +107,15 @@
 
     <footer>
         <ul class="social-links">
-            <li><a href="https://www.instagram.com/thv/?utm_source=ig_web_button_share_sheet&igshid=ODE2OTA4Y2Y1MQ=="><img src="IMG/Instagram.png" alt="Instagram"></a></li>
-            <li><a href="https://x.com/BTS_twt?s=20"><img src="IMG/Twitter.png" alt="Twitter"></a></li>
-            <li><a href="https://www.youtube.com/watch?v=yTsINmrAK4I&list=PLRzAbtkGK56bFdslVs1eXPKcdBAg87Fll"><img src="IMG/youtube.png" alt="YouTube"></a></li>
-            <li><a href="https://open.spotify.com/intl-es/artist/3JsHnjpbhX4SnySpvpa9DK?si=Zspke9r6TYavvNapWyd84w"><img src="IMG/spotify.png" alt="Spotify"></a></li>
+            <a href="https://www.instagram.com/thv/?utm_source=ig_web_button_share_sheet&igshid=ODE2OTA4Y2Y1MQ==" target="_blank"><img src="IMG/Instagram.png" alt="Instagram"></a>
+            <a href="https://x.com/BTS_twt?s=20" target="_blank"><img src="IMG/Twitter.png" alt="Twitter"></a>
+            <a href="https://www.youtube.com/watch?v=yTsINmrAK4I&list=PLRzAbtkGK56bFdslVs1eXPKcdBAg87Fll" target="_blank"><img src="IMG/youtube.png" alt="YouTube"></a>
+            <a href="https://open.spotify.com/intl-es/artist/3JsHnjpbhX4SnySpvpa9DK?si=Zspke9r6TYavvNapWyd84w" target="_blank"><img src="IMG/spotify.png" alt="Spotify"></a>
         </ul>
         <p>&copy; 2023 María Valentina Fortich</p>
     </footer>
+    <script defer src="script.js"></script>
 
-    <script>
-
-        var loader = document.getElementById("preloader")
-        window.addEventListener("load", function(){
-
-          setTimeout(function(){
-          loader.style.display = "none";
-          }, 5000);
-        })
-
-    </script>
 </body>
 </html>
 

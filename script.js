@@ -25,3 +25,33 @@ document.addEventListener("DOMContentLoaded", function() {
         showSlide(currentIndex);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const verMasBtn = document.getElementById("ver-mas-btn");
+    const biografiaCompleta = document.getElementById("biografia-completa");
+
+    verMasBtn.addEventListener("click", function() {
+        if (biografiaCompleta.style.display === "none") {
+            biografiaCompleta.style.display = "block";
+            verMasBtn.textContent = "Ver menos";
+        } else {
+            biografiaCompleta.style.display = "none";
+            verMasBtn.textContent = "Ver más";
+        }
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburgerButton = document.querySelector(".hamburger-button");
+    const desktopMenu = document.querySelector(".desktop-menu");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    hamburgerButton.addEventListener("click", function() {
+        if (mobileMenu.style.display === "block") {
+            mobileMenu.style.display = "none";
+        } else {
+            mobileMenu.style.display = "block";
+        }
+    });
+});
+
+
